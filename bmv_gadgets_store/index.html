@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BMV Gadgets Store — watches, phone accessories and computer gadgets in Nigeria.">
+  <title>BMV Gadgets Store | Premium Gadgets</title>
+  <style>
+    :root { --black:#101010; --gold:#d6ad52; --cream:#f8f5ee; --muted:#6d6a63; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--black); background:var(--cream); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .topbar { background:var(--gold); text-align:center; padding:8px 16px; font-size:13px; font-weight:700; }
+    header { background:var(--black); color:white; padding:18px 5%; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .brand { font-size:21px; font-weight:900; letter-spacing:1px; }
+    .brand span { color:var(--gold); }
+    nav { display:flex; gap:20px; flex-wrap:wrap; font-size:14px; }
+    nav a:hover { color:var(--gold); }
+    .hero { padding:76px 5%; color:white; background:linear-gradient(120deg,rgba(0,0,0,.96),rgba(0,0,0,.78)), radial-gradient(circle at 85% 25%,#6b5425,transparent 35%); }
+    .hero-inner { max-width:1100px; margin:auto; display:grid; grid-template-columns:1.2fr .8fr; gap:38px; align-items:center; }
+    .eyebrow { color:var(--gold); text-transform:uppercase; font-size:12px; letter-spacing:3px; font-weight:bold; }
+    h1 { font-size:clamp(38px,6vw,64px); line-height:1.08; margin:14px 0 18px; }
+    .hero p { max-width:560px; color:#e4e0d8; font-size:17px; }
+    .buttons { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
+    .btn { display:inline-block; border-radius:6px; padding:12px 18px; font-weight:700; font-size:14px; }
+    .btn-gold { background:var(--gold); color:#17130a; }
+    .btn-outline { border:1px solid #b9b4aa; color:white; }
+    .hero-card { border:1px solid rgba(214,173,82,.5); border-radius:14px; padding:28px; background:rgba(255,255,255,.04); }
+    .hero-card .big { font-size:55px; line-height:1; }
+    .hero-card h3 { margin:16px 0 5px; color:var(--gold); }
+    .hero-card p { font-size:14px; margin:0; }
+    section { padding:60px 5%; }
+    .container { max-width:1100px; margin:auto; }
+    .section-head { text-align:center; margin-bottom:32px; }
+    .section-head h2 { font-size:clamp(27px,4vw,38px); margin:0 0 8px; }
+    .section-head p { margin:0; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .product { background:white; border:1px solid #e9e3d7; border-radius:12px; padding:22px; display:flex; flex-direction:column; min-height:240px; }
+    .product-icon { height:76px; display:grid; place-items:center; font-size:46px; background:#f6f0e2; border-radius:9px; margin-bottom:17px; }
+    .product h3 { margin:0 0 6px; font-size:19px; }
+    .product p { margin:0 0 18px; color:var(--muted); font-size:14px; flex:1; }
+    .product .btn { text-align:center; }
+    .how { background:#fff; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .step { padding:20px; border-radius:10px; background:var(--cream); }
+    .number { width:35px; height:35px; display:grid; place-items:center; background:var(--gold); border-radius:50%; font-weight:900; margin-bottom:12px; }
+    .step h3 { margin:0 0 6px; }
+    .step p { margin:0; color:var(--muted); font-size:14px; }
+    .trust { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-top:24px; }
+    .trust div { border:1px solid #e5ddcd; border-radius:10px; padding:17px; font-size:14px; }
+    .contact { background:var(--black); color:white; text-align:center; }
+    .contact p { color:#dedbd3; }
+    footer { background:#080808; color:#b8b5ad; text-align:center; padding:20px 5%; font-size:12px; }
+    .small { font-size:12px; color:#a9a49a; margin-top:18px; }
+    @media (max-width:760px) {
+      .hero-inner { grid-template-columns:1fr; }
+      .grid,.steps,.trust { grid-template-columns:1fr; }
+      header { align-items:flex-start; }
+      nav { gap:12px; }
+      section { padding:45px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">PREMIUM STYLE • WATCHES • PHONE ACCESSORIES • COMPUTER GADGETS</div>
+  <header>
+    <a class="brand" href="#home">BMV <span>GADGETS</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#products">Products</a>
+      <a href="#how">How to Order</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Smart picks. Premium feel.</div>
+          <h1>Your everyday tech,<br><span style="color:var(--gold)">made stylish.</span></h1>
+          <p>Discover watches, phone accessories and computer gadgets selected for everyday use. Message us to check current stock, prices and delivery options.</p>
+          <div class="buttons">
+            <a class="btn btn-gold" href="https://wa.me/2347070582410?text=Hello%20BMV%20Gadgets%20Store%2C%20please%20send%20me%20your%20available%20products%20and%20prices." target="_blank" rel="noopener">Shop on WhatsApp</a>
+            <a class="btn btn-outline" href="#products">Explore Categories</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="big">⌚</div>
+          <h3>Find your next favourite</h3>
+          <p>Browse our categories and ask us for the latest catalogue. Product availability and prices are confirmed before you order.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop Our Categories</h2>
+          <p>Choose a category and message us for available items and today's prices.</p>
+        </div>
+        <div class="grid">
+          <article class="product">
+            <div class="product-icon" aria-hidden="true">⌚</div>
+            <h3>Watches</h3>
+            <p>Classic, modern and luxury-look wristwatches for everyday style.</p>
+            <a class="btn btn-gold" href="https://wa.me/2347070582410?text=Hello%2C%20please%20send%20me%20available%20watches%20and%20prices." target="_blank" rel="noopener">Ask for Watches</a>
+          </article>
+          <article class="product">
+            <div class="product-icon" aria-hidden="true">📱</div>
+            <h3>Phone Accessories</h3>
+            <p>Explore compatible accessories such as chargers, cables, cases and more.</p>
+            <a class="btn btn-gold" href="https://wa.me/2347070582410?text=Hello%2C%20please%20send%20me%20phone%20accessories%20and%20prices." target="_blank" rel="noopener">Ask for Accessories</a>
+          </article>
+          <article class="product">
+            <div class="product-icon" aria-hidden="true">💻</div>
+            <h3>Computer Gadgets</h3>
+            <p>Ask about available computer accessories and useful everyday tech.</p>
+            <a class="btn btn-gold" href="https://wa.me/2347070582410?text=Hello%2C%20please%20send%20me%20computer%20gadgets%20and%20prices." target="_blank" rel="noopener">Ask for Computer Gadgets</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>How to Order</h2>
+          <p>A simple way to ask about a product before buying.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="number">1</div><h3>Choose a category</h3><p>Pick watches, phone accessories or computer gadgets.</p></div>
+          <div class="step"><div class="number">2</div><h3>Confirm details</h3><p>Message us to confirm the exact item, price, delivery fee and estimated arrival time.</p></div>
+          <div class="step"><div class="number">3</div><h3>Place your order</h3><p>Proceed only after the product, total cost and delivery arrangements are clear.</p></div>
+        </div>
+        <div class="trust">
+          <div>✓ Prices and availability confirmed before order</div>
+          <div>✓ Delivery details discussed upfront</div>
+          <div>✓ Ask about returns or faulty-item policy before paying</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About BMV Gadgets Store</h2>
+          <p>We're building a convenient place to discover stylish watches and useful gadgets.</p>
+        </div>
+        <p style="max-width:800px;margin:0 auto;text-align:center;color:var(--muted)">Our goal is to make browsing simple and help customers get clear information before ordering. We confirm stock, pricing and delivery details with customers before an order is finalised. If you're looking for something specific, send us a message.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="eyebrow">Need help choosing?</div>
+        <h2 style="font-size:clamp(28px,4vw,40px);margin:10px 0">Let's talk gadgets.</h2>
+        <p>Send a WhatsApp message to ask for our current catalogue and prices.</p>
+        <a class="btn btn-gold" href="https://wa.me/2347070582410?text=Hello%20BMV%20Gadgets%20Store%2C%20I%20would%20like%20to%20see%20your%20catalogue." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <div class="small">WhatsApp: 07070582410</div>
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> BMV Gadgets Store. All rights reserved.<br>Product photos, prices and availability should be added only after supplier details are confirmed.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
